@@ -1,6 +1,6 @@
 import { SessionProvider } from "next-auth/react";
-import Layout from "../components/layouts/Layout";
 import "../public/css/tailwind.css";
+import "../public/css/config.css";
 
 export default function App({
   Component,
@@ -8,9 +8,7 @@ export default function App({
 }) {
   return (
     <SessionProvider session={session}>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      <Component {...pageProps} />
     </SessionProvider>
   );
 }
