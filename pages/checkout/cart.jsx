@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../../components/layouts/Layout";
+import Link from "next/link";
 import { TfiTrash, TfiAngleRight } from "react-icons/tfi";
 
 const CartPage = () => {
@@ -153,6 +154,20 @@ const CartPage = () => {
             </div>
           </div>
         </div>
+        {/* <div class="grid grid-cols-10 gap-4">
+          <div class="col-start-3 col-end-9 col-span-4">
+            <div className="w-full h-auto bg-white rounded pt-10 px-20  pb-10 shadow-[0_20px_50px_-20px_rgba(0,0,0,0.3)] text-center">
+              <h1>ไม่มีสินค้าในรถเข็นของคุณ</h1>
+              <div className="mt-6">
+                <Link href="/">
+                  <button className="h-10 w-1/4 bg-primary hover:bg-primary-light rounded text-white hover:shadow-md ease-in duration-100">
+                    เลือกซื้อสินค้า
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div> */}
       </div>
     </Layout>
   );
